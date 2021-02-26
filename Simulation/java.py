@@ -26,8 +26,8 @@ def main():
         new_list = list(zip(device_list, np.zeros(len(device_list))))
         # convert list of devices to numpy array
         np_dev_list = np.asarray(new_list)
-    # dbscan(lines, np_dev_list)
-    k_Means(lines, np_dev_list)
+    dbscan(lines, np_dev_list)
+    # k_Means(lines, np_dev_list)
 
 
 def dbscan(X, np_dev_list):
