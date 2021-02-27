@@ -39,7 +39,7 @@ workers = [Server1.Worker.remote() for i in range(num_workers)]
 # We'll also instantiate a model on the driver process to evaluate the test
 # accuracy during training.
 
-model = Server1.ConvNet()
+model = Server1.MobileNetV2()
 test_loader = Server1.get_data_loader()[1]
 
 ###########################################################################
