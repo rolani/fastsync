@@ -40,7 +40,7 @@ time_file = "SSP{0}_out{1}_iter_time.txt".format(staleness_threshold,num_workers
 f_out = open(out_file, "a")
 f_time = open(time_file, "a")
 
-model = Server1.ConvNet()
+model = Server1.MobileNetV2()
 test_loader = Server1.get_data_loader()[1]
 
 ###########################################################################
